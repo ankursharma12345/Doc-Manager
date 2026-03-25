@@ -1,0 +1,29 @@
+.nav-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blanchedalmond;
+  height: calc(100vh - 100%);
+  /* Yha pr operator(-) ke around space lgana mandatory hota h kyuki CSS parser ko token seperate krne ke liye spaces chahiye hota h.Yha pr hm direct 5vh bhi likh skte the */
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  padding: 0 1.25rem;
+  align-items: inherit;
+  justify-content: inherit;
+}
+
+.nav-div button {
+  background: none;
+  border: none;
+  color: #0075e9;
+  font: inherit;
+  cursor: pointer;
+  margin-left: 1.5rem;
+}
+
+.btn {
+  display: flex;
+}

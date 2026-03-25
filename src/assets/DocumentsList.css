@@ -1,0 +1,13 @@
+.list-container {
+  margin-top: 3rem;
+}
+
+.table-container {
+  margin-top: 4rem;
+}
+
+.table-row th {
+  padding: 0 18rem 0 0rem;
+  text-align: start;
+  align-items: flex-start;
+}

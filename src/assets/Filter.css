@@ -1,0 +1,9 @@
+.filter-container {
+  /* padding: 3rem; */
+}
+
+.filter-container input {
+  height: 2rem;
+  width: 100%;
+  padding: 0rem 0.7rem;
+}
