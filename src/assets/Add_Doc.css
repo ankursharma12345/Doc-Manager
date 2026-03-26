@@ -18,3 +18,15 @@
 #description {
   width: 100%;
 }
+.file-wrapper {
+  display: flex;
+  align-items: center;
+  /* gap: 10px; */
+}
+
+.file-wrapper input[type="file"] {
+  border: 1px solid #ccc;
+  padding: 2px;
+  cursor: pointer;
+  width: 25.2rem;
+}

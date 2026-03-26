@@ -7,7 +7,32 @@
 }
 
 .table-row th {
-  padding: 0 18rem 0 0rem;
+  padding: 0 16rem 0 0rem;
   text-align: start;
   align-items: flex-start;
+}
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#primary {
+  background-color: cadetblue;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 2rem;
+}
+
+#delete {
+  background-color: rgb(238, 35, 86);
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 2rem;
 }

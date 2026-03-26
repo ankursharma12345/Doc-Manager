@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "../../assets/Add_Doc.css";
 
 const AddNewDoc = () => {
@@ -11,7 +11,11 @@ const AddNewDoc = () => {
       ...prev,
       [id]: value
     }))
-  }
+  };
+  useEffect(() => {
+    const inputField = document.getElementById("docName");
+    inputField?.focus();
+  }, []);
   return (
     <div className="add-container">
       <div className="add-content">
@@ -28,10 +32,28 @@ const AddNewDoc = () => {
           <textarea rows={5} cols={40} id="description" onChange={handleChange} value={formData?.["description"] ?? ""} />
         </div>
         <div>
-          <div>
+          {/* <div>
             <label>Select Image</label>
           </div>
-          <textarea rows={5} cols={40} id="description" onChange={handleChange} value={formData?.["description"] ?? ""} />
+          <div >
+            <input type="file" className="file-text" />
+          </div> */}
+          <div>
+            <label>Select Image</label>
+
+            <div className="file-wrapper">
+              <input
+                type="file"
+                id="fileUpload"
+                onChange={(e) =>
+                  setFormData((prev) => ({
+                    ...prev,
+                    file: e.target.files[0]
+                  }))
+                }
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
